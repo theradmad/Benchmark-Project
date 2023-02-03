@@ -2,9 +2,9 @@ import time
 import numpy
 # Start timer
 
-f = open('bench_file1.txt', 'x')
+# f = open('bench_file1.txt', 'x')
 
-z = open('bench_file2.txt', 'x')
+# z = open('bench_file2.txt', 'x')
 
 def benchmark1(): #reference time = 100s
     start_time = time.time()
@@ -62,11 +62,12 @@ def benchmark3():
     execution_time = end_time - start_time
     print("Array operation benchmark execution time:", execution_time)
 
-
-
-
-
-
+def benchmark4():  
+    start = time.time()
+    with open('bench_file1.txt','wb') as f:
+        for i in range(10**9):
+            f.write(b'0'*100)
+ 
 
 
 
