@@ -41,22 +41,36 @@ def benchmark2():
 #read array elements
 def benchmark3():
     start_time= time.time()
-    arr1 = [None]*10**9
-    arr2 = [None]*10**9
-    arr3 = [None]*10**9
-    arr5 = [None]*10**9
-    arr4 = [None]*10**9
-    for i in range(len(arr1)):
+    
+    arr1 = [0]*10**9
+    
+    
+    for i in range(10**9):
+        
         v = arr1[i]
-        w = arr2[i]
-        x = arr3[i]
-        y = arr4[i]
-        z = arr5[i]
+        
         arr1[i]=1
-        arr2[i]=1
-        arr3[i]=1
-        arr4[i]=1
-        arr5[i]=1
+    for i in range(10**9):
+        
+        v = arr1[i]
+        
+        arr1[i]=1
+    for i in range(10**9):
+        
+        v = arr1[i]
+        
+        arr1[i]=1
+    for i in range(10**9):
+        
+        v = arr1[i]
+        
+        arr1[i]=1
+    for i in range(10**9):
+        
+        v = arr1[i]
+        
+        arr1[i]=1
+        
     end_time = time.time()
 
     execution_time = end_time - start_time
@@ -75,3 +89,21 @@ def benchmark4():
     execution_time = end - start
     print("Hard drive benchmark 1 execution time:", execution_time)
 
+def benchmark5():  
+    start = time.time()
+    with open('bench_file2.txt','wb') as f:
+        for i in range(10**9):
+            f.write(b'0'*10000)
+
+
+
+
+
+
+benchmark3()
+
+
+
+
+    
+       
