@@ -94,6 +94,13 @@ def benchmark5():
     with open('bench_file2.txt','wb') as f:
         for i in range(10**9):
             f.write(b'0'*10000)
+    with open('bench_file2.txt','wb') as f:
+        for i in range(10**5):
+            l = f.read(10000)
+    end = time.time()
+
+    execution_time = end - start
+    print("Hard drive benchmark 2 execution time:", execution_time)
 
 
 
