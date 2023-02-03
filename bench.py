@@ -44,7 +44,13 @@ def benchmark3():
     arr3 = [None]*10**9
     arr5 = None]*10**9
     arr4 = [None]*10**9
-    
+for i in range(len(arr1)):
+        v = arr1[i]
+        w = arr2[i]
+        x = arr3[i]
+        y = arr4[i]
+        z = arr5[i]
+        
 
 
 
