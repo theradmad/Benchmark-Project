@@ -52,4 +52,24 @@ def benchmark3():
         x = arr3[i]
         y = arr4[i]
         z = arr5[i]
+        arr1[i]=1
+        arr2[i]=1
+        arr3[i]=1
+        arr4[i]=1
+        arr5[i]=1
+    end_time = time.time()
+
+    execution_time = end_time - start_time
+    print("Array operation benchmark execution time:", execution_time)
+
+
+
+
+
+
+
+
+
+
+    
        
