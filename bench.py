@@ -81,7 +81,7 @@ def benchmark4():
     with open('bench_file1.txt','wb') as f:
         for i in range(10**9):
             f.write(b'0'*100)
-    with open('bench_file1.txt','wb') as f:
+    with open('bench_file1.txt','rb') as f:
         for i in range(10**9):
             l = f.read(100)
     end = time.time()
@@ -94,7 +94,7 @@ def benchmark5():
     with open('bench_file2.txt','wb') as f:
         for i in range(10**9):
             f.write(b'0'*10000)
-    with open('bench_file2.txt','wb') as f:
+    with open('bench_file2.txt','rb') as f:
         for i in range(10**5):
             l = f.read(10000)
     end = time.time()
@@ -107,7 +107,7 @@ def benchmark5():
 
 
 
-benchmark3()
+
 
 
 
